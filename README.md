@@ -46,11 +46,6 @@ Cài đặt dependencies:
 ```bash
 # Dùng uv (khuyến nghị)
 uv sync
-
-# Hoặc dùng pip
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
 ```
 
 ## Cách sử dụng
@@ -67,7 +62,7 @@ cd Kani-TTS-Vie
 # Cài đặt dependencies (Sử dụng uv)
 uv sync
 
-# Chạy ứng dụng Gradio/FastAPI (ví dụ: FastAPI)
+# Chạy ứng dụng
 uv run uvicorn server:app
 ```
 
@@ -91,6 +86,7 @@ Chào đón mọi đóng góp!
 
 Dự án này phát hành theo [Apache License 2.0](LICENSE).
 Kiểm tra giấy phép các mô hình/dataset bên thứ ba trước khi phân phối lại.
+
 
 
 
